@@ -85,6 +85,6 @@ jobs:
     - name: send message
       uses: appleboy/telegram-action@master
       with:
-        to: ${{ secrets.TELEGRAM_TO }}
-        token: ${{ secrets.TELEGRAM_TOKEN }}
+        to: ${{ secrets.TELEGRAM_TO }}  # Узнать свой ID можно у бота @userinfobot
+        token: ${{ secrets.TELEGRAM_TOKEN }}  # Получить этот токен можно у бота @BotFather
         message: ${{ github.workflow }} успешно выполнен! 
